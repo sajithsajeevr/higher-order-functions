@@ -59,15 +59,40 @@ console.log(lasted10years); */
 
 //map in action
 
-const testMap= companies.map(function(company){
+/* const testMap= companies.map(function(company){
 return `${company.name}[${company.start}][${company.end}]`;
 
 })
 console.log(testMap);
 
-testMap.forEach(company => {
+testMap.forEach(company => { 
     console.log(company);
 });
-
+ */
 /* const testMapu = companies.map(company=>company.name);
 console.log(); */
+
+// sort babe
+
+/* const sort=companies.sort(function(c1,c2){
+if(c1.start>c2.start){
+    return 1;
+}else if(c1.start<c2.start){
+    return -1;
+}else if(c1.start==c2.start){
+    return 0;
+}
+})
+
+console.log(sort);
+
+const sorted= companies.sort((a, b)=> (a.start > b.start ?1 :-1));
+
+console.log(sorted);
+
+ */
+
+ //rock and roll with reduce vs for loop
+
+
+
