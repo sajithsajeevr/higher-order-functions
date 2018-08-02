@@ -21,7 +21,9 @@ console.log(Company.category);
   console.log(company.category);    
   }); */
 
-  //filter vs for
+  //filter vs for loop
+
+/* 
 const canDrink=[];
   for(let i=0;i<ages.length;i++){
       if(ages[i]<18){
@@ -33,4 +35,39 @@ canDrink.push(ages[i]);
   console.log(canDrink);
 
 
-  
+  const canDrinki= ages.filter(function(age){
+if(age>18){
+    return true;
+}
+
+  })
+console.log(canDrinki);
+  const canDrink2=ages.filter(age=>age>=21);
+  console.log(canDrink2);
+
+
+// get 80's companies
+const eightiescomapny= companies.filter(company=>company.start>=1980 && company.start<=1990);
+
+console.log(eightiescomapny);
+
+//lasted 10 years
+const lasted10years= companies.filter(company=>company.end-company.start>=10);
+
+console.log(lasted10years); */
+
+
+//map in action
+
+const testMap= companies.map(function(company){
+return `${company.name}[${company.start}][${company.end}]`;
+
+})
+console.log(testMap);
+
+testMap.forEach(company => {
+    console.log(company);
+});
+
+/* const testMapu = companies.map(company=>company.name);
+console.log(); */
